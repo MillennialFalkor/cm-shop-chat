@@ -73,15 +73,21 @@ Mock product page where users and shop owners can post questions/answers.
 	- Tweak build and documentation as needed for compatibility
 	- Deliver to CM
 
+### Models
+- User
+- UserAttribute
+- Product
+- Message
+
 ### Templates
 - Master
 - Header
 - Footer
+- Home Page
 - Product Page
-- Product Overview
-- Comment Form
-- Comments List
-- Single Comment
+- Post Message (Product Page)
+- Display Single Message (Product Page)
+- Display Messages List (Product Page)
 
 ### Front-End Dependencies
 - Google Fonts

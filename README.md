@@ -28,6 +28,9 @@ This file isn't tracked since it contains environment-specific variables. Rename
 - folders:
 	- map: `/path/to/your/project/root`
 
+### Configure a .env File
+Within the `shopchat` app directory, find the `.env.example` file. Duplicate and save as `.env`. Configure with an `APP_KEY` if needed, and set the `DB_DATABASE` to be `shopchat`.
+
 ### Set Up Host
 Add an `/etc/hosts` file entry for `shopchat.cm`:  
 `192.168.10.10  shopchat.cm`

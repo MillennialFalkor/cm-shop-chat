@@ -1,0 +1,19 @@
+ip: 192.168.10.10
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/shopchat.pub
+keys:
+    - ~/.ssh/shopchat
+folders:
+    -
+        map: /Users/Andrew/Documents/Development/Andrew/cm-shop-chat
+        to: /home/vagrant/code
+sites:
+    -
+        map: shopchat.cm
+        to: /home/vagrant/code/public
+databases:
+    - shopchat
+name: cm-shop-chat
+hostname: cm-shop-chat

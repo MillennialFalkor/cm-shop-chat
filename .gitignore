@@ -18,3 +18,9 @@ Homestead.json
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
+
+# Homestead additional
+.vagrant/
+phpunit.xml
+after.sh
+aliases

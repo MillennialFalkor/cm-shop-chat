@@ -94,3 +94,9 @@ Mock product page where users and shop owners can post questions/answers.
 - Bootstrap
 - jQuery
 - jQuery UI
+
+
+## Dev Notes
+
+### Compiling Assets
+CSS is compiled via SASS - details [here](https://laravel.com/docs/5.6/mix#sass).

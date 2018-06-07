@@ -33,7 +33,7 @@ Add an `/etc/hosts` file entry for `shopchat.cm`:
 `192.168.10.10  shopchat.cm`
 
 ### Boot Vagrant Box
-From the project root, run the `vagrant up` command.
+From the project root, run the `vagrant up --provision` command.
 
 ### Run Migrations
 Bring your environment up to speed with database updates and sample data by running `php artisan migrate`.

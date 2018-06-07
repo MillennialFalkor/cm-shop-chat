@@ -12,7 +12,7 @@ folders:
 sites:
     -
         map: shopchat.cm
-        to: /home/vagrant/code/public
+        to: /home/vagrant/code/shopchat/public
 databases:
     - shopchat
 name: cm-shop-chat

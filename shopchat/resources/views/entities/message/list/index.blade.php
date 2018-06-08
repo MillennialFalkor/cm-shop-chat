@@ -1,7 +1,7 @@
-<div class="row mt-4 mb-4 message-list">
+<ul class="mt-4 mb-4 message-list">
     @foreach ($messages as $message)
-        <div class="col-12 message-list-item-wrapper">
+        <li class="message-list-item-wrapper mt-3 mb-3">
             @include( 'entities.message.list.single' )
-        </div>
+        </li>
     @endforeach
-</div>
+</ul>

@@ -24,3 +24,6 @@ Homestead.json
 phpunit.xml
 after.sh
 aliases
+
+# Custom dev
+__DEV__

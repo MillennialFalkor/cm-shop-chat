@@ -83,6 +83,8 @@ Mock product page where users and shop owners can post questions/answers.
 - Master
 - Header
 - Footer
+- Alert Messages
+- Success Messages
 - Home Page
 - Product Page
 - Product List

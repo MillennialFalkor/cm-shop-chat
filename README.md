@@ -85,9 +85,11 @@ Mock product page where users and shop owners can post questions/answers.
 - Footer
 - Home Page
 - Product Page
-- Post Message (Product Page)
-- Display Single Message (Product Page)
-- Display Messages List (Product Page)
+- Product List
+- Product List Single
+- Message List
+- Message List Single
+- Message List Post
 
 ### Front-End Dependencies
 - Google Fonts

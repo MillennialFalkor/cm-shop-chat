@@ -15,11 +15,15 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('user_id');
             $table->string('key');
             $table->string('title');
             $table->text('description');
             $table->text('image');
             $table->timestamps();
+
+            // Foreign key constraints
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

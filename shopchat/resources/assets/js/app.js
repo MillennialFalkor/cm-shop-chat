@@ -44,9 +44,13 @@ jQuery(document).on('submit', '#message-list-post-form', function(e){
     // Set up data vars
     var form = jQuery(this);
     var messages_panel = jQuery('#product-messages');
+    var spinner = jQuery(this).find('.loading-indicator');
 
     // Prevent standard form submission
     e.preventDefault();
+
+    // Start spinner
+    spinner.css('display','inline-block');
 
     // Set up token
     jQuery.ajaxSetup({
@@ -62,7 +66,9 @@ jQuery(document).on('submit', '#message-list-post-form', function(e){
         data: formToJSON( form ),
         dataType: "json",
         success: function( result ){
-            console.log(result);
+
+            // Hide spinner
+            spinner.hide();
 
             // Our return will be JSOn - check for an errors property
             if( result.hasOwnProperty('errors') ){

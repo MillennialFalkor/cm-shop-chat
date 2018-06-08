@@ -10459,3 +10459,12 @@ h5 {
   text-transform: uppercase;
 }
 
+a {
+  color: #E20938;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #35BFBC;
+}
+

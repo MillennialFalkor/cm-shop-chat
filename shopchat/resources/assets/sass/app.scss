@@ -59,3 +59,20 @@ h5 {
 	text-transform: uppercase;
 }
 
+a {
+	color: $highlight-primary;
+	&:hover{
+		text-decoration: none;
+		color: $highlight-secondary;
+	}
+}
+
+.product-list {
+	.product-list-item {
+		.product-list-item-link {
+		}
+		.product-list-item-img{
+		}
+	}
+}
+

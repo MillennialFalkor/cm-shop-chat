@@ -16,6 +16,7 @@ use View;
 use App\Message;
 use App\User;
 use App\Product;
+use App\UserAttribute;
 
 class MessageController extends Controller
 {
@@ -109,8 +110,8 @@ class MessageController extends Controller
 
         // Get product from product id passed in via form - a hidden input so it should be there
         $product_id = isset($input['product_id']) ? $input['product_id'] : null;
-        $product = isset($product_id) ? Product::find($product_id)->first() : null;
-        $messages = isset($product_id) ? Message::where('product_id', $product_id)->get() : null;
+        $product = isset($product_id) ? Product::where('id',$product_id)->first() : null;
+        $messages = isset($product_id) ? Message::where('product_id', $product_id)->orderBy('id','desc')->get() : null;
         $content = isset($input['content']) ? $input['content'] : null;
 
         // Define requirements for data passed via form
@@ -186,9 +187,14 @@ class MessageController extends Controller
         $message->product_id = $product_id;
         $message->content = $request->content;
         $message->save();
+
+        // Reset the value on the user attributes table that keeps track of total comments
+        $user_messages_count = Message::where('user_id', $user_id)->count();
+        $messages_count = array('user_id'=>$user_id,'attr_name'=>'messages_count');
+        UserAttribute::updateOrCreate($messages_count,['attr_value'=>$user_messages_count]);
         
         // Re-evaluate messages now that we've added one
-        $messages = isset($product_id) ? Message::where('product_id', $product_id)->get() : null;
+        $messages = isset($product_id) ? Message::where('product_id', $product_id)->orderBy('id','desc')->get() : null;
 
         // Create a success message
         $success = 'Thanks, your comment has been posted!';

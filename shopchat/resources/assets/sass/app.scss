@@ -94,6 +94,12 @@ a {
                     padding: 2px 5px;
                     margin-left: 3px;
                 }
+                .messages-count{
+                    display: inline-block;
+                    border: none;
+                    padding: 3px 5px;
+                    margin-left: 10px;
+                }
             }
             .content{
                 font-size: 1.15em;
@@ -116,4 +122,11 @@ a {
     width: 24px;
     height: 24px;
     display: none;
+}
+
+footer{
+    background: #dcdfe1;
+    p{
+        margin: 15px 0;
+    }
 }

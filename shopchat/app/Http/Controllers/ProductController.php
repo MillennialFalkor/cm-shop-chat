@@ -50,7 +50,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         return view (
             'entities.product.index', 
-            ['product' => $product, 'messages' => Message::where('product_id', $product->id)->get()]
+            ['product' => $product, 'messages' => Message::where('product_id', $product->id)->orderBy('id','desc')->get()]
         );
     }
 

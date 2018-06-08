@@ -10492,6 +10492,13 @@ a:hover {
   margin-left: 3px;
 }
 
+.message-list .message-list-item .message-parts .user .messages-count {
+  display: inline-block;
+  border: none;
+  padding: 3px 5px;
+  margin-left: 10px;
+}
+
 .message-list .message-list-item .message-parts .content {
   font-size: 1.15em;
   font-family: "Catamaran", sans-serif;
@@ -10508,5 +10515,13 @@ a:hover {
   width: 24px;
   height: 24px;
   display: none;
+}
+
+footer {
+  background: #dcdfe1;
+}
+
+footer p {
+  margin: 15px 0;
 }
 

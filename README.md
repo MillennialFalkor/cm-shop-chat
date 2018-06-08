@@ -23,7 +23,7 @@ You'll need to create an SSH keypair to boot Vagrant.
 2. Move the resulting files into your user's `.ssh` directory:  `mv shopchat shopchat.pub ~/.ssh/`
 
 ### Configure a Homestead.yaml File
-This file isn't tracked since it contains environment-specific variables. Rename the included `Homestead.yaml.sample` file to `Homestead.yaml` and update paths as needed, for example:  
+This file isn't tracked since it contains environment-specific variables. Duplicate and save the included `Homestead.yaml.sample` file as `Homestead.yaml` and update paths as needed, for example:  
 
 - folders:
 	- map: `/path/to/your/project/root`
@@ -39,7 +39,7 @@ Add an `/etc/hosts` file entry for `shopchat.cm`:
 From the project root, run the `vagrant up --provision` command.
 
 ### Run Migrations
-Bring your environment up to speed with database updates and sample data by running `php artisan migrate`.
+From the project root, SSH in by typing `vagrant ssh`. Then change directories from there to get into the `shopchat` directory (follow the path in the Homestead.yaml file to get there). Bring your environment up to speed with database updates and sample data by running `php artisan migrate`.
 
 ### Access Project Via Browser
 Access your project at [http://shopchat.cm](http://shopchat.cm).

@@ -14,7 +14,7 @@ Allows Creative Market shops to talk directly to their customers, with an AJAX-d
 
 <div class="row mt-4 mb-5">
 
-	<div class="col-xs-12 col-sm-8 col-lg-6 col-centered">
+	<div class="col-12 col-sm-8 col-lg-6 col-centered">
 		<img class="img-fluid" src="{{ URL::asset('images/shopchat-logo-lg.png') }}" />
 	</div><!-- col-->
 

@@ -10468,3 +10468,20 @@ a:hover {
   color: #35BFBC;
 }
 
+.message-list-item .message-list-item-message-parts {
+  list-style-type: none;
+}
+
+.message-list-item .message-list-item-message-parts .message-list-item-user {
+  font-size: .75em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.message-list-item .message-list-item-message-parts .message-list-item-content {
+  font-size: 1.15em;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 500;
+}
+

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\Message;
 
 class ProductController extends Controller
 {
@@ -46,7 +47,11 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        return view('entities.product.index', ['product' => Product::findOrFail($id)]);
+        $product = Product::findOrFail($id);
+        return view (
+            'entities.product.index', 
+            ['product' => $product, 'messages' => Message::where('product_id', $product->id)->get()]
+        );
     }
 
     /**

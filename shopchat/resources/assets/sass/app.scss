@@ -14,17 +14,17 @@
 }
 
 .navbar{
-	.navbar-brand{
-		img.logo{
-			width: 120px;
-			height: auto;
-		}
-	}
+    .navbar-brand{
+        img.logo{
+            width: 120px;
+            height: auto;
+        }
+    }
 }
 
 body {
-	padding-top: 5rem;
-	font-family: $font-family-catamaran;
+    padding-top: 5rem;
+    font-family: $font-family-catamaran;
 }
 
 .col-centered {
@@ -33,46 +33,63 @@ body {
 }
 
 h1 {
-	font-family: $font-family-raleway;
-	font-weight: 800;
+    font-family: $font-family-raleway;
+    font-weight: 800;
 }
 
 h2 {
-	font-family: $font-family-raleway;
-	font-weight: 600;
+    font-family: $font-family-raleway;
+    font-weight: 600;
 }
 
 h3 {
-	font-family: $font-family-catamaran;
-	font-weight: 500;
-	text-transform: uppercase;
+    font-family: $font-family-catamaran;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 h4 {
-	font-family: $font-family-raleway;
-	font-weight: 600;
+    font-family: $font-family-raleway;
+    font-weight: 600;
 }
 
 h5 {
-	font-family: $font-family-raleway;
-	font-weight: 600;
-	text-transform: uppercase;
+    font-family: $font-family-raleway;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 a {
-	color: $highlight-primary;
-	&:hover{
-		text-decoration: none;
-		color: $highlight-secondary;
-	}
+    color: $highlight-primary;
+    &:hover{
+        text-decoration: none;
+        color: $highlight-secondary;
+    }
 }
 
 .product-list {
-	.product-list-item {
-		.product-list-item-link {
-		}
-		.product-list-item-img{
-		}
-	}
+    .product-list-item {
+        .product-list-item-link {
+        }
+        .product-list-item-img{
+        }
+    }
+}
+
+.message-list-item{
+    .message-list-item-message-parts{
+        list-style-type: none;
+        .message-list-item-user{
+            font-size: .75em;
+            font-family: $font-family-raleway;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .message-list-item-content{
+            font-size: 1.15em;
+            font-family: $font-family-catamaran;
+            font-weight: 500;
+        }
+    }
 }
 

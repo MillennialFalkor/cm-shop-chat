@@ -24,3 +24,7 @@ Route::resources([
     'users' => 'UserController',
     'userattributes' => 'UserAttributeController',
 ]);
+
+// Ajax Routes
+
+Route::post('messages/post','MessageController@postMessageToList')->name('message.posttolist');

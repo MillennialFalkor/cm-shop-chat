@@ -14,11 +14,11 @@ ShopChat Product - {{ $product->title }}
 
 <div class="row mt-4 mb-4">
 
-	<div class="col-xs-12 col-sm-6 col-md-8 mb-3">
+	<div class="col-12 col-sm-6 col-md-8 mb-3">
 		<img src="{{ $product->image }}" class="img-fluid" />
 	</div><!-- col-->
 
-	<div class="col-xs-12 col-sm-6 col-md-4">
+	<div class="col-12 col-sm-6 col-md-4">
 		<h3>Product Details</h3>
 		<hr>
 		<h4>Description: <small>{{ $product->description }}</small></h4>
@@ -32,13 +32,8 @@ ShopChat Product - {{ $product->title }}
 
 <p>Connect with the Creative Market shop owner or fellow customers.</p>
 
-<div class="row mt-4 mb-4">
+<p style="text-transform: uppercase;"><small><strong>Tip: Entering username of shop owner simulates comment left by shop owner.</strong></small></p>
 
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		@include( 'entities.message.list.panel' )
-	</div>
-
-</div><!-- row -->
-
+@include( 'entities.message.list.panel' )
 
 @stop

@@ -26,7 +26,7 @@ ShopChat Product - {{ $product->title }}
 
 <h2>Questions? Comments? Leave 'em!</h2>
 
-<p>Conect with the Creative Market shop owner or fellow customers.</p>
+<p>Connect with the Creative Market shop owner or fellow customers.</p>
 
 <div class="row mt-4 mb-4">
 

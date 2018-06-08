@@ -87,7 +87,8 @@ Mock product page where users and shop owners can post questions/answers.
 - Product Page
 - Product List
 - Product List Single
-- Message List
+- Message List Panel
+- Message List Index
 - Message List Single
 - Message List Post
 

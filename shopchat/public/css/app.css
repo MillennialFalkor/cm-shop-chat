@@ -10468,20 +10468,45 @@ a:hover {
   color: #35BFBC;
 }
 
-.message-list-item .message-list-item-message-parts {
+.message-list {
   list-style-type: none;
+  padding: 0;
 }
 
-.message-list-item .message-list-item-message-parts .message-list-item-user {
+.message-list .message-list-item .message-parts {
+  list-style-type: none;
+  padding: 0;
+}
+
+.message-list .message-list-item .message-parts .user {
   font-size: .75em;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.message-list-item .message-list-item-message-parts .message-list-item-content {
+.message-list .message-list-item .message-parts .user .shop-owner {
+  display: inline-block;
+  border: 1px solid #35BFBC;
+  padding: 2px 5px;
+  margin-left: 3px;
+}
+
+.message-list .message-list-item .message-parts .content {
   font-size: 1.15em;
   font-family: "Catamaran", sans-serif;
   font-weight: 500;
+}
+
+.alert p:last-child {
+  margin-bottom: 0;
+}
+
+.loading-indicator {
+  background: url("/images/ajax-loader.gif");
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
 }
 

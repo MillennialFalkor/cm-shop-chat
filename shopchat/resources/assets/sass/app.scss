@@ -76,20 +76,44 @@ a {
     }
 }
 
-.message-list-item{
-    .message-list-item-message-parts{
-        list-style-type: none;
-        .message-list-item-user{
-            font-size: .75em;
-            font-family: $font-family-raleway;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-        .message-list-item-content{
-            font-size: 1.15em;
-            font-family: $font-family-catamaran;
-            font-weight: 500;
+.message-list{
+    list-style-type: none;
+    padding: 0;
+    .message-list-item{
+        .message-parts{
+            list-style-type: none;
+            padding: 0;
+            .user{
+                font-size: .75em;
+                font-family: $font-family-raleway;
+                font-weight: 400;
+                text-transform: uppercase;
+                .shop-owner{
+                    display: inline-block;
+                    border: 1px solid $highlight-secondary;
+                    padding: 2px 5px;
+                    margin-left: 3px;
+                }
+            }
+            .content{
+                font-size: 1.15em;
+                font-family: $font-family-catamaran;
+                font-weight: 500;
+            }
         }
     }
 }
 
+.alert{
+    p:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.loading-indicator{
+    background: url('/images/ajax-loader.gif');
+    background-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}

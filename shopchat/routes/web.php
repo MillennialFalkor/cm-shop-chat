@@ -15,3 +15,12 @@ Route::get('/', function () {
 	$products = App\Product::all();
     return view('pages.home',['products'=>$products]);
 });
+
+// Resource Controller Routes
+
+Route::resources([
+    'products' => 'ProductController',
+    'messages' => 'MessageController',
+    'users' => 'UserController',
+    'userattributes' => 'UserAttributeController',
+]);

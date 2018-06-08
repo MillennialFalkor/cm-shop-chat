@@ -28,11 +28,7 @@ Allows Creative Market shops to talk directly to their customers, with an AJAX-d
 
 <div class="row">
 
-	<div class="col-xs-12">
-
-
-
-	</div><!-- col-xs-12 -->
+	@include( 'entities.product.list.index' )
 
 </div><!-- row -->
 

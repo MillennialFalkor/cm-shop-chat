@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('pages.home');
+	$products = App\Product::all();
+    return view('pages.home',['products'=>$products]);
 });

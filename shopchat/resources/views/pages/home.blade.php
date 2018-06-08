@@ -12,7 +12,7 @@ Allows Creative Market shops to talk directly to their customers, with an AJAX-d
 
 <h1 class="text-center">Challenge Accepted!</h1>
 
-<div class="row mt-4 mb-4">
+<div class="row mt-4 mb-5">
 
 	<div class="col-xs-12 col-sm-8 col-lg-6 col-centered">
 		<img class="img-fluid" src="{{ URL::asset('images/shopchat-logo-lg.png') }}" />
